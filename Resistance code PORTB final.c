@@ -68,10 +68,10 @@ ISR(TIMER0_COMPA_vect)
 }
 
 void Resistance(void){
-// DDRC = 0b11110010; //, four outputs and four inputs (buttons)
-// PORTC = 0b00111101;
-DDRC=0b00111100;
-PORTC = 0b00111100;
+DDRC = 0b11110010; //, four outputs and four inputs (buttons)
+PORTC = 0b00111101;
+//DDRC=0b00111100;
+//PORTC = 0b00111100;
     uint16_t V_measured = 0;
 	float Vout = 0;
 	float R2 = 0;
